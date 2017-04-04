@@ -1,0 +1,100 @@
+/* -- MOBILE VIEW CSS RULES - DEFAULT -- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 1rem;
+    /*
+    border: 1px solid red; */
+}
+
+.container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*
+    border: 1px solid blue; */
+}
+
+.container ul li {
+    margin: 0 0 1rem 0;
+}
+
+.container ul img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* -- First Break-Point at 35rem - TABLET VIEWPORT-- */
+@media screen and (min-width: 35rem) and (max-width: 80rem){
+    /*
+    body of @media rule containes CSS rules that will be 
+    implemented only if the current screen-size is within 
+    the limits set for @media rule */
+    
+    /* 
+    Since the <li> elements are floated, 
+    clear the float on <ul> */
+    .container ul::after {
+        content: "";
+        display: block;
+        clear: left;
+    }
+    
+    
+    .container ul li {
+        /*
+        To expand the width of your 3 columns on the account 
+        of removed margin-right from the third column,
+        subtract 0.66rem (1rem - 0.33rem = 0.66rem) from 33.33% instead of 1rem. 
+        The value of removed margin was 1rem. 1rem/3 = 0.33rem.
+        So, 0.33rem is how much less than 1rem you need to 
+        subtract from 33.33% column-width in order to expand 
+        the column width and compensate for removed margin. 
+        */
+        width: calc(33.33% - 1rem + 0.33rem);
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    
+    /* Reference:
+       https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
+    .container ul li:nth-child(3n) {
+        margin: 0 0 1rem 0;
+    }
+}
+
+
+
+
+/* -- Second Break-Point at 80rem - DESKTOP VIEWPORT-- */
+@media screen and (min-width: 80rem) {
+    
+    .container {
+        width: 75%;
+        margin: 0 auto
+    }
+    
+    .container ul:after {
+        content: "";
+        display: block;
+        clear: left;
+    }
+    
+    .container ul li {
+        width: calc(25% - 0.75rem);
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    
+    .container ul li:nth-child(4n) {
+        margin: 0 0 1rem 0;
+    }
+}

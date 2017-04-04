@@ -1,0 +1,462 @@
+/*
+Adobe Color Code Hexadecimal values
+#00C70C
+#006927
+#25FF0
+*/
+
+.wrapper {
+    max-width: 100rem;
+    background-image: url("../img/trees1.jpg");
+}
+
+.mh-image {
+    background-image: url("../img/trees1.jpg");
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #00C70C;
+    height: auto;
+    width: auto;   
+
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #00C70C;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.h1 {
+    background-color: #006927;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.btn, a:after, i, h1 {
+    content: '\f185';
+    font-family: Font Awesome;
+    width: auto;
+    padding: 3px 11px;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-bottom: 1.1rem;
+    text-align: center;
+    font-size: 1.618rem;
+    background-color: #00C70C;
+}
+.box ul li span{
+    font-size: 0;
+    color: #00C70C;
+}
+.box ul li:first-child span:before{
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f185';
+}
+
+.box ul li:nth-child(2) span:before{
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f1bb';
+}
+.box ul li:last-child span:before{
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f011';
+}
+.box ul li span:before{
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f137';
+}
+
+.body {	
+    font-family: 'Philosopher', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 0.618rem;
+    line-height: 1.618;
+    background-image: url("../img/trees1.JPG");
+	background-color: #006927;
+}
+
+p {
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+    background-color: #006927;
+}
+
+.ul li {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #25FF00;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.banner {
+    background-image: url("../img/bgblue.png");
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #00C70C;
+    height: auto;
+    width: auto;
+    color: #FFF;   
+}
+
+.icons {
+    background-color: #006927;
+    text-align: center;
+}
+
+
+.footer-bg {
+    background-color: #006927;
+    font-size: 0.618rem;
+}
+
+
+
+
+
+
+/* -- First Break-Point at 35rem - TABLET VIEWPORT-- */
+@media screen and (min-width: 35rem) and (max-width: 80rem){
+    /*
+    body of @media rule containes CSS rules that will be 
+    implemented only if the current screen-size is within 
+    the limits set for @media rule */
+    
+    /* 
+    Since the <li> elements are floated, 
+    clear the float on <ul> */
+    .wrapper ul::after {
+        content: "";
+        display: block;
+        clear: left;
+    }
+    
+    
+    .wrapper ul li {
+        /*
+        To expand the width of your 3 columns on the account 
+        of removed margin-right from the third column,
+        subtract 0.66rem (1rem - 0.33rem = 0.66rem) from 33.33% instead of 1rem. 
+        The value of removed margin was 1rem. 1rem/3 = 0.33rem.
+        So, 0.33rem is how much less than 1rem you need to 
+        subtract from 33.33% column-width in order to expand 
+        the column width and compensate for removed margin. 
+        */
+        width: calc(33.33% - 1rem + 0.33rem);
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    
+    /* Reference:
+       https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
+    .wrapper ul li:nth-child(3n) {
+        margin: 0 0 1rem 0;
+    }
+    
+    .wrapper {
+    max-width: 100rem;
+    background-image: url("../img/trees1.jpg");
+        
+    
+}
+
+.mh-image {
+    background-image: url("../img/trees1.jpg");
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #00C70C;
+    height: auto;
+    width: auto;   
+
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #00C70C;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.h1 {
+    background-color: #006927;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.btn, a:after, i, h1 {
+    content: '\f185';
+    font-family: Font Awesome;
+    width: auto;
+    padding: 3px 11px;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-bottom: 1.1rem;
+    text-align: center;
+    font-size: 1.618rem;
+    background-color: #00C70C;
+}
+.box ul li span{
+    font-size: 0;
+    color: #00C70C;
+}
+.box ul li:first-child span:before{
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f185';
+}
+
+.box ul li:nth-child(2) span:before{
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f1bb';
+}
+.box ul li:last-child span:before{
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f011';
+}
+.box ul li span:before{
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f137';
+}
+
+.body {	
+    font-family: 'Philosopher', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 0.618rem;
+    line-height: 1.618;
+    background-image: url("../img/trees1.JPG");
+	background-color: #006927;
+}
+
+p {
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+    background-color: #006927;
+}
+
+.ul li {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #25FF00;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.banner {
+    background-image: url("../img/bgblue.png");
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #00C70C;
+    height: auto;
+    width: auto;
+    color: #FFF;   
+}
+
+.icons {
+    background-color: #006927;
+    text-align: center;
+}
+
+
+.footer-bg {
+    background-color: #006927;
+    font-size: 0.618rem;
+}
+
+}
+
+
+
+
+/* -- Second Break-Point at 60rem - DESKTOP VIEWPORT-- */
+@media screen and (min-width: 60rem) {
+    
+    .wrapper {
+        width: 100%;
+        margin: 0 auto
+    }
+    
+    .wrapper ul:after {
+        content: "";
+        display: block;
+        clear: left;
+    }
+    
+    .wrapper ul li {
+        width: calc(25% - 0.75rem);
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    
+    .wrapper ul li:nth-child(4n) {
+        margin: 0 0 1rem 0;
+    }
+    
+    .wrapper {
+    
+    background-image: url("../img/trees1.jpg");
+}
+
+.mh-image {
+    background-image: url("../img/trees1.jpg");
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #00C70C;
+    height: auto;
+    width: auto;   
+
+}
+
+.nav ul li {
+    float: left;
+    display: inline;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #00C70C;
+  text-align: center;
+line-height: 1.618rem;
+  padding: 0;
+  margin: 0;
+}
+
+.h1 {
+    background-color: #006927;
+    padding-bottom: 0.5rem;
+    line-height: 1.618rem;
+}
+
+
+
+.btn, a:after, i, h1 {
+    content: '\f185';
+    font-family: Font Awesome;
+    width: auto;
+    line-height: 1.618rem;
+    padding: 3px 11px;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-bottom: 1.1rem;
+    text-align: center;
+    font-size: 1.618rem;
+    background-color: #00C70C;
+}
+.box ul li span{
+    width: 30%;
+    font-size: 0;
+    color: #00C70C;
+}
+.box ul li:first-child span:before{
+    width: 30%;
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f185';
+}
+
+.box ul li:nth-child(2) span:before{
+    width: 30%;
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f1bb';
+}
+.box ul li:last-child span:before{
+    width: 30%;
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f011';
+}
+.box ul li span:before{
+    width: 30%;
+    font-family: FontAwesome; 
+    font-size: 30px; 
+    display: inline-block; 
+    content: '\f137';
+}
+
+.body {	
+    font-family: 'Philosopher', Helvetica, Arial, sans-serif;
+    line-height: 1.618rem;
+    margin: 0;
+    padding: 0;
+    font-size: 0.618rem;
+    line-height: 1.618;
+    background-image: url("../img/trees1.JPG");
+	background-color: #006927;
+}
+
+p {
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+    background-color: #006927;
+}
+
+.ul li {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #25FF00;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.banner {
+    background-image: url("../img/bgblue.png");
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #00C70C;
+    height: auto;
+    width: auto;
+    color: #FFF;   
+}
+
+.icons {
+    background-color: #006927;
+    text-align: center;
+}
+
+
+.footer-bg {
+    background-color: #006927;
+    font-size: 0.618rem;
+    line-height: 1.618rem;
+}
+
+}
